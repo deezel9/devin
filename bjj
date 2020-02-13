@@ -1,0 +1,39 @@
+---
+title: "R Notebook"
+output:
+  html_notebook: default
+  word_document: default
+  pdf_document: default
+---
+**Packages
+```{r}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(readxl)
+library(jpeg)
+library(png)
+```
+** Dataset NameChange
+
+```{r}
+Week2Tug <- file_show
+```
+**Vizualize
+
+```{r}
+yikes <- png::readPNG("newdelete.PNG")
+```
+
+```{r}
+ggplot(Week2Tug, aes(x = Person, y = Completion)) +
+  ggtitle("So Horny Slipped into my Ass") +
+  scale_fill_continuous(guide = FALSE) +
+  annotation_custom(rasterGrob(Ohno, 
+                               width = unit(1,"npc"), 
+                               height = unit(1,"npc")), 
+                    -Inf, Inf, -Inf, Inf) +
+  geom_bar(stat="identity", fill = "#000666", position = "dodge", width = .75, colour = 'White')  +
+  scale_x_discrete('Athlete') 
+ 
+```
